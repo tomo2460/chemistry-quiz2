@@ -1124,14 +1124,14 @@ export const TITLES = [
         id: 'beginner',
         name: '新人研究員',
         desc: '初めてクイズを最後までクリアした',
-        image: 'assets/cards/card_beginner.png',
+        image: 'assets/cards/card_special.png',
         condition: (state) => state.playHistory.totalPlays >= 1
     },
     {
         id: 'perfect_master',
         name: 'パーフェクトマスター',
         desc: '一度も間違えずに全問正解した',
-        image: 'assets/cards/card_perfect.png',
+        image: 'assets/cards/card_accuracy.png',
         condition: (state) => state.currentRun.firstTryCorrect === state.currentRun.totalQuestions
     },
     {
@@ -1152,7 +1152,7 @@ export const TITLES = [
         id: 'streak_king',
         name: 'ストリークキング',
         desc: '5問連続で正解した',
-        image: 'assets/cards/card_streak.png',
+        image: 'assets/cards/card_accuracy.png',
         condition: (state) => state.currentRun.maxStreak >= 5
     },
     // Adding back the previous fancy titles that were lost in previous replace or were further down
