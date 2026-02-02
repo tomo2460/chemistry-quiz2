@@ -1,4 +1,4 @@
-const QUESTION_DATA = [
+export const QUESTION_DATA = [
     // --- 物質の構成 / Composition of Matter ---
     // 1. 原子の構成
     {
