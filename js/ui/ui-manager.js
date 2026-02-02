@@ -6,29 +6,38 @@ import { Visuals } from '../visuals.js';
 import { CATEGORY_COLORS } from '../data/elements.js';
 
 export const UIManager = {
-    elements: {
-        screens: {
-            title: document.getElementById('title-screen'),
-            quiz: document.getElementById('quiz-screen'),
-            result: document.getElementById('result-screen'),
-            collection: document.getElementById('collection-screen'),
-            questionList: document.getElementById('question-list-screen'),
-            gacha: document.getElementById('gacha-screen'),
-            periodicTable: document.getElementById('periodic-table-screen')
-        },
-        quiz: {
-            progressText: document.getElementById('progress-text'),
-            progressBar: document.getElementById('progress-bar'),
-            retryBadge: document.getElementById('retry-badge'),
-            questionText: document.getElementById('question-text'),
-            visualArea: document.getElementById('visual-area'),
-            optionsContainer: document.getElementById('options-container'),
-            feedbackOverlay: document.getElementById('feedback-overlay'),
-            feedbackIcon: document.getElementById('feedback-icon'),
-            feedbackText: document.getElementById('feedback-text'),
-            explanationText: document.getElementById('explanation-text')
-        },
-        mascot: document.getElementById('denshi-kun')
+    elements: {},
+
+    init() {
+        this.elements = {
+            screens: {
+                title: document.getElementById('title-screen'),
+                quiz: document.getElementById('quiz-screen'),
+                result: document.getElementById('result-screen'),
+                collection: document.getElementById('collection-screen'),
+                questionList: document.getElementById('question-list-screen'),
+                gacha: document.getElementById('gacha-screen'),
+                periodicTable: document.getElementById('periodic-table-screen')
+            },
+            quiz: {
+                progressText: document.getElementById('progress-text'),
+                progressBar: document.getElementById('progress-bar'),
+                retryBadge: document.getElementById('retry-badge'),
+                questionText: document.getElementById('question-text'),
+                visualArea: document.getElementById('visual-area'),
+                optionsContainer: document.getElementById('options-container'),
+                feedbackOverlay: document.getElementById('feedback-overlay'),
+                feedbackIcon: document.getElementById('feedback-icon'),
+                feedbackText: document.getElementById('feedback-text'),
+                explanationText: document.getElementById('explanation-text')
+            },
+            mascot: document.getElementById('denshi-kun'),
+            // Adding buttons explicitly for App.js to check if needed (or rely on IDs there)
+            buttons: {
+                start10: document.getElementById('start-10-btn')
+            }
+        };
+        console.log("UIManager initialized", this.elements);
     },
 
     switchScreen(screenName) {

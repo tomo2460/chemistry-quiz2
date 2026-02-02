@@ -14,12 +14,16 @@ import { Gacha } from './gacha.js';
 // For debug, exposing App to window is useful.
 const App = {
     init: () => {
+        console.log("App.init started");
+        UIManager.init();
+
         const saved = StorageService.loadProgress();
         if (saved) {
             GameState.userProgress = saved;
         }
         App.setupEventListeners();
         UIManager.updateMascot('normal');
+        console.log("App initialized successfully");
     },
 
     setupEventListeners: () => {
