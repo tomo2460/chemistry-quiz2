@@ -787,7 +787,7 @@ export const QUESTION_DATA = [
         id: 124,
         text: "「塩化物イオン」のイオン式は？",
         type: "text",
-        options: ["Cl<sup>-</sup>", "ClO<sup>-</sup>", "ClO<sub>3</sub><sup>-</sup>", "C-"],
+        options: ["Cl<sup>-</sup>", "ClO<sup>-</sup>", "ClO<sub>3</sub><sup>-</sup>", "C<sup>-</sup>"],
         correctIndex: 0,
         explanation: "塩素原子が電子を1個受け取ったものです。"
     },
@@ -867,7 +867,7 @@ export const QUESTION_DATA = [
         id: 134,
         text: "「炭酸水素イオン」のイオン式は？",
         type: "text",
-        options: ["HCO<sub>3</sub> -", "CO<sub>3</sub><sup>2-</sup>", "H<sub>2</sub>CO<sub>3</sub>", "CH<sub>3</sub>COO<sup>-</sup>"],
+        options: ["HCO<sub>3</sub><sup>-</sup>", "CO<sub>3</sub><sup>2-</sup>", "H<sub>2</sub>CO<sub>3</sub>", "CH<sub>3</sub>COO<sup>-</sup>"],
         correctIndex: 0,
         explanation: "炭酸の第1段階電離で生じます。"
     },
@@ -893,7 +893,7 @@ export const QUESTION_DATA = [
         id: 137,
         text: "ナトリウムイオン(Na<sup>+</sup>)と塩化物イオン(Cl<sup>-</sup>)が結合した物質の化学式は？",
         type: "text",
-        options: ["NaCl", "Na2Cl", "NaCl<sub>2</sub>", "NaClO"],
+        options: ["NaCl", "Na<sub>2</sub>Cl", "NaCl<sub>2</sub>", "NaClO"],
         correctIndex: 0,
         explanation: "1価の陽イオンと1価の陰イオンなので1:1で結合します。"
     },
@@ -901,7 +901,7 @@ export const QUESTION_DATA = [
         id: 138,
         text: "カルシウムイオン(Ca<sup>2+</sup>)と塩化物イオン(Cl<sup>-</sup>)の組成式は？",
         type: "text",
-        options: ["CaCl<sub>2</sub>", "CaCl", "Ca<sub>2</sub>Cl", "Ca2Cl<sub>2</sub>"],
+        options: ["CaCl<sub>2</sub>", "CaCl", "Ca<sub>2</sub>Cl", "Ca<sub>2</sub>Cl<sub>2</sub>"],
         correctIndex: 0,
         explanation: "電荷の総和が0になるよう、Ca<sup>2+</sup> 1個に対して Cl<sup>-</sup> が2個必要です。"
     },
@@ -909,7 +909,7 @@ export const QUESTION_DATA = [
         id: 139,
         text: "アルミニウムイオン(Al<sup>3+</sup>)と酸化物イオン(O<sup>2-</sup>)の組成式は？",
         type: "text",
-        options: ["Al<sub>2</sub>O<sub>3</sub>", "AlO", "Al3O<sub>2</sub>", "AlO<sub>2</sub>"],
+        options: ["Al<sub>2</sub>O<sub>3</sub>", "AlO", "Al<sub>3</sub>O<sub>2</sub>", "AlO<sub>2</sub>"],
         correctIndex: 0,
         explanation: "3(+)×2 = 6、2(-)×3 = 6。最小公倍数で合わせます。"
     },
@@ -925,7 +925,7 @@ export const QUESTION_DATA = [
         id: 141,
         text: "カルシウムイオン(Ca<sup>2+</sup>)と水酸化物イオン(OH<sup>-</sup>)の組成式は？",
         type: "text",
-        options: ["Ca(OH)<sub>2</sub>", "CaOH", "Ca2OH", "CaOH<sub>2</sub>"],
+        options: ["Ca(OH)<sub>2</sub>", "CaOH", "Ca<sub>2</sub>OH", "CaOH<sub>2</sub>"],
         correctIndex: 0,
         explanation: "水酸化カルシウム（消石灰）です。OH全体をカッコでくくります。"
     },
@@ -933,7 +933,7 @@ export const QUESTION_DATA = [
         id: 142,
         text: "銅(II)イオン(Cu<sup>2+</sup>)と硫酸イオン(SO<sub>4</sub><sup>2-</sup>)の組成式は？",
         type: "text",
-        options: ["CuSO<sub>4</sub>", "Cu2SO<sub>4</sub>", "Cu(SO<sub>4</sub>)2", "CuS"],
+        options: ["CuSO<sub>4</sub>", "Cu<sub>2</sub>SO<sub>4</sub>", "Cu(SO<sub>4</sub>)<sub>2</sub>", "CuS"],
         correctIndex: 0,
         explanation: "2価同士なので1:1で結合します。硫酸銅(II)です。"
     },
@@ -949,7 +949,7 @@ export const QUESTION_DATA = [
         id: 144,
         text: "アンモニウムイオン(NH<sub>4</sub><sup>+</sup>)と硫酸イオン(SO<sub>4</sub><sup>2-</sup>)の組成式は？",
         type: "text",
-        options: ["(NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>", "NH<sub>4</sub>SO<sub>4</sub>", "NH<sub>4</sub>(SO<sub>4</sub>)2", "N<sub>2</sub>H8SO<sub>4</sub>"],
+        options: ["(NH<sub>4</sub>)<sub>2</sub>SO<sub>4</sub>", "NH<sub>4</sub>SO<sub>4</sub>", "NH<sub>4</sub>(SO<sub>4</sub>)<sub>2</sub>", "N<sub>2</sub>H<sub>8</sub>SO<sub>4</sub>"],
         correctIndex: 0,
         explanation: "硫酸アンモニウムです。1価の陽イオン2個で2価の陰イオンと釣り合います。"
     },
@@ -957,7 +957,7 @@ export const QUESTION_DATA = [
         id: 145,
         text: "銀イオン(Ag<sup>+</sup>)と硝酸イオン(NO<sub>3</sub><sup>-</sup>)の組成式は？",
         type: "text",
-        options: ["AgNO<sub>3</sub>", "Ag(NO<sub>3</sub>)<sub>2</sub>", "Ag2NO<sub>3</sub>", "AgN"],
+        options: ["AgNO<sub>3</sub>", "Ag(NO<sub>3</sub>)<sub>2</sub>", "Ag<sub>2</sub>NO<sub>3</sub>", "AgN"],
         correctIndex: 0,
         explanation: "硝酸銀です。水によく溶けます。"
     },
@@ -965,7 +965,7 @@ export const QUESTION_DATA = [
         id: 146,
         text: "鉄(III)イオン(Fe<sup>3+</sup>)と水酸化物イオン(OH<sup>-</sup>)の組成式は？",
         type: "text",
-        options: ["Fe(OH)<sub>3</sub>", "FeOH", "Fe(OH)<sub>2</sub>", "Fe3OH"],
+        options: ["Fe(OH)<sub>3</sub>", "FeOH", "Fe(OH)<sub>2</sub>", "Fe<sub>3</sub>OH"],
         correctIndex: 0,
         explanation: "水酸化鉄(III)です。赤褐色の沈殿を作ります。"
     },
@@ -973,7 +973,7 @@ export const QUESTION_DATA = [
         id: 147,
         text: "マグネシウムイオン(Mg<sup>2+</sup>)と酸化物イオン(O<sup>2-</sup>)の組成式は？",
         type: "text",
-        options: ["MgO", "Mg2O", "MgO<sub>2</sub>", "Mg2O<sub>2</sub>"],
+        options: ["MgO", "Mg<sub>2</sub>O", "MgO<sub>2</sub>", "Mg<sub>2</sub>O<sub>2</sub>"],
         correctIndex: 0,
         explanation: "酸化マグネシウムです。"
     },
@@ -981,7 +981,7 @@ export const QUESTION_DATA = [
         id: 148,
         text: "炭酸カルシウムの化学式は？",
         type: "text",
-        options: ["CaCO<sub>3</sub>", "Ca(CO<sub>3</sub>)2", "Ca2CO<sub>3</sub>", "CaHCO<sub>3</sub>"],
+        options: ["CaCO<sub>3</sub>", "Ca(CO<sub>3</sub>)<sub>2</sub>", "Ca<sub>2</sub>CO<sub>3</sub>", "CaHCO<sub>3</sub>"],
         correctIndex: 0,
         explanation: "Ca<sup>2+</sup>とCO<sub>3</sub><sup>2-</sup>の結合です。石灰石の主成分です。"
     },
@@ -1005,7 +1005,7 @@ export const QUESTION_DATA = [
         id: 151,
         text: "塩化鉄(III)の化学式は？",
         type: "text",
-        options: ["FeCl<sub>3</sub>", "FeCl<sub>2</sub>", "Fe3Cl", "FeCl"],
+        options: ["FeCl<sub>3</sub>", "FeCl<sub>2</sub>", "Fe<sub>3</sub>Cl", "FeCl"],
         correctIndex: 0,
         explanation: "Fe<sup>3+</sup>とCl<sup>-</sup>が1:3で結合します。"
     },
