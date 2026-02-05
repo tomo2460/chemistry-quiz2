@@ -139,9 +139,9 @@ export const ELEMENTS = [
     { symbol: "Nh", number: 113, name: "ニホニウム", rarity: "legendary", category: "metal", item: "🗾", itemName: "日本発見！", trivia: "日本が発見した初めての元素、誇り！", image: "assets/images/elements/Nh.png" },
     { symbol: "Fl", number: 114, name: "フレロビウム", rarity: "legendary", category: "metal", item: "⚛️", itemName: "ロシア合成", trivia: "フレロフにちなんだ元素。", image: "assets/images/elements/Fl.png" },
     { symbol: "Mc", number: 115, name: "モスコビウム", rarity: "legendary", category: "metal", item: "🏛️", itemName: "モスクワ", trivia: "モスクワにちなんだ元素。", image: "assets/images/elements/Mc.png" },
-    { symbol: "Lv", number: 116, name: "リバモリウム", rarity: "legendary", category: "metal", item: "🇺🇸", itemName: "米国合成", trivia: "リバモア研究所にちなんだ元素。" },
-    { symbol: "Ts", number: 117, name: "テネシン", rarity: "legendary", category: "halogen", item: "🔬", itemName: "テネシー", trivia: "テネシー州にちなんだ元素。" },
-    { symbol: "Og", number: 118, name: "オガネソン", rarity: "legendary", category: "noble_gas", item: "👑", itemName: "周期表の王", trivia: "周期表の最後を飾る118番元素！" }
+    { symbol: "Lv", number: 116, name: "リバモリウム", rarity: "legendary", category: "metal", item: "🇺🇸", itemName: "米国合成", trivia: "リバモア研究所にちなんだ元素。", image: "assets/images/elements/Lv.png" },
+    { symbol: "Ts", number: 117, name: "テネシン", rarity: "legendary", category: "halogen", item: "🔬", itemName: "テネシー", trivia: "テネシー州にちなんだ元素。", image: "assets/images/elements/Ts.png" },
+    { symbol: "Og", number: 118, name: "オガネソン", rarity: "legendary", category: "noble_gas", item: "👑", itemName: "周期表の王", trivia: "周期表の最後を飾る118番元素！", image: "assets/images/elements/Og.png" }
 ];
 
 // レアリティ別の出現確率
